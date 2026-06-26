@@ -1,4 +1,4 @@
-# stylesync
+# StyleSync
 An R Shiny app that scores outfit compatibility using colour harmony, skin tone matching, face shape detection, and body shape rules — no external APIs required.
 A self-contained R project that analyses outfit compatibility using computer vision, unsupervised machine learning and rule-based style logic — no external APIs required.
 
