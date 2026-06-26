@@ -24,7 +24,6 @@ detect_face_shape <- function(img_path) {
   h <- face$height
 
   # ── Crop face region using ocv_crop (correct API) ──────────────────────────
-  # Old code used img[y:(y+h), x:(x+w)] which is wrong for ocv objects.
   face_ocv  <- ocv_crop(img, x = x, y = y, width = w, height = h)
 
   # ── Convert to imager for edge analysis ────────────────────────────────────
