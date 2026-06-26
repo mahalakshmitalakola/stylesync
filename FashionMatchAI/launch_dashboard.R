@@ -1,4 +1,4 @@
-# FashionMatchAI - Dashboard launcher
+# StyleSync - Dashboard launcher
 # Sources all function modules, then launches the Shiny dashboard.
 # Run this file to start the app: source("launch_dashboard.R")
 
@@ -46,7 +46,7 @@
   )
 }
 
-#' Source all FashionMatchAI modules
+#' Source all StyleSync modules
 #'
 #' Call this once at the top of any script or before running the dashboard.
 #' Lists every module explicitly so missing files are caught early with a clear
@@ -111,7 +111,7 @@ load_fashion_modules <- function(base_dir = NULL, quiet = FALSE) {
   invisible(list(base_dir = base_dir, modules = modules))
 }
 
-#' Launch the Fashion Match AI Shiny dashboard
+#' Launch the StyleSync Shiny dashboard
 #'
 #' @param dev_mode If TRUE, sources modules from the current project directory.
 #' @param launch_browser Passed to shiny::runApp().
