@@ -4,10 +4,6 @@ pca_color_features <- function(color_matrix) {
     stop("color_matrix must be a matrix or data frame")
   }
 
-  # Fixed: guard lowered from 3 to 2.
-  # predict_outfit() passes a richer palette matrix now (multiple rows per
-  # garment from extract_color(return_palette=TRUE)), but we still protect
-  # against any accidental 1-row call.
   if (nrow(color_matrix) < 2) {
     stop("Need at least 2 colour samples for PCA")
   }
