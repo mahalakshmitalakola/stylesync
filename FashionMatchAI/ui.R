@@ -62,7 +62,7 @@ ui <- fluidPage(
 
   div(style = "max-width: 900px; margin: 32px auto; padding: 0 16px;",
 
-    div(class = "main-title", "Fashion Match AI"),
+    div(class = "main-title", "Style sync"),
     div(class = "sub-title",  "Upload a top, bottom and face photo to get your outfit compatibility score"),
 
     fluidRow(
