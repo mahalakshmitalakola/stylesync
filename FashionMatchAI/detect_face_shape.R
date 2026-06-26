@@ -61,7 +61,7 @@ detect_face_shape <- function(img_path) {
 
   # ── Define five vertical regions ────────────────────────────────────────────
   # Using five bands gives us forehead, upper-cheek, mid-cheek, lower-cheek
-  # and jaw — finer than the original three, which missed diamond shape.
+  # and jaw 
   forehead_pts  <- coords[y_vals < quantile(y_vals, 0.20), ]
   upper_chk_pts <- coords[y_vals >= quantile(y_vals, 0.25) &
                            y_vals <  quantile(y_vals, 0.45), ]
@@ -110,7 +110,6 @@ detect_face_shape <- function(img_path) {
     shape <- "heart"
 
   # Diamond: narrow forehead AND jaw, wide cheekbones
-  # (original code had no diamond rule — relied on the else branch)
   } else if (cheek_w > forehead_w * 1.10 &&
              cheek_w > jaw_w * 1.10 &&
              abs(forehead_w - jaw_w) < cheek_w * 0.25) {
