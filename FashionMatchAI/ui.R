@@ -1,4 +1,4 @@
-# FashionMatchAI - Shiny UI
+# Stylesync - Shiny UI
 library(shiny)
 
 preview_slot <- function(title, output_id, optional = FALSE) {
