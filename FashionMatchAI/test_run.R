@@ -1,4 +1,4 @@
-# ── FashionMatchAI — Test runner ─────────────────────────────────────────────
+# ── StyleSync — Test runner ─────────────────────────────────────────────
 # Run this file to verify the full pipeline works end to end.
 # Usage: source("test_run.R")
 
@@ -6,7 +6,7 @@ source("launch_dashboard.R")
 load_fashion_modules()
 
 cat("\n====================================================\n")
-cat("  FashionMatchAI — Pipeline Test\n")
+cat("  StyleSync — Pipeline Test\n")
 cat("====================================================\n\n")
 
 # ── Helper: print result cleanly ─────────────────────────────────────────────
