@@ -1,4 +1,4 @@
-# ── FashionMatchAI — Shiny server ─────────────────────────────────────────────
+# ── StyleSync — Shiny server ─────────────────────────────────────────────
 library(shiny)
 
 source("launch_dashboard.R")
