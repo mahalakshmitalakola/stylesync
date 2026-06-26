@@ -1,8 +1,6 @@
 skin_tone_match <- function(score, face_img, top_color, bottom_color) {
 
   # ── Extract skin tone from face image ───────────────────────────────────────
-  # Fixed: original called extract_color() on the face image which returns the
-  # dominant colour of the whole image (often the clothing or background).
   # extract_skin_tone() uses a proper skin-pixel mask so it returns the actual
   # skin tone category directly.
   skin_result <- tryCatch(
