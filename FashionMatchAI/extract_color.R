@@ -9,10 +9,7 @@ extract_color <- function(image_path, k = NULL, return_palette = FALSE) {
   g <- as.vector(img[, , , 2])
   b <- as.vector(img[, , , 3])
 
-  # ── Background removal (single combined mask — fixes index misalignment) ────
-  # Original filtered pixels and saturation in two separate steps, leaving
-  # sat_keep and pixels with different row counts so indexing was wrong.
-  # Fixed: build one logical mask applied to all three together.
+  # ── Background removal 
   brightness <- (r + g + b) / 3
   saturation <- pmax(r, g, b) - pmin(r, g, b)
 
